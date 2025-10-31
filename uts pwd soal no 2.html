@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <title>UNINDRA</title>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            margin-top: 20px;
+        }
+        h1 {
+            color: blue;
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+        .address {
+            color: red;
+            font-size: 18px;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: marquee 6s linear infinite alternate;
+            margin: 0 auto 10px;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%);}
+            100% { transform: translateX(-100%);}
+        }
+        hr {
+            height: 5px;
+            background-color: black;
+            border: none;
+            margin: 0 20% 30px 20%;
+        }
+        .form-table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            font-size: 14px;
+            width: 50%;
+            border: 1px solid black;
+        }
+        .form-table td {
+            border: 1px solid black;
+            padding: 3px 5px;
+            text-align: left;
+        }
+        .form-table .label {
+            width: 25%;
+            text-align: right;
+            font-weight: bold;
+        }
+        .form-table .input {
+            width: 75%;
+        }
+        .section {
+            text-align: left;
+            width: 50%;
+            margin: 20px auto;
+            font-size: 14px;
+        }
+        button {
+            margin: 20px auto;
+            padding: 5px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            display: block;
+        }
+        img.logo {
+            width: 70px;
+            display: block;
+            margin: 0 auto 5px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="md-659748b2445a1-universitas-indraprasta-pgri.webp" alt="Logo UNINDRA" class="logo" />
+        <h1>UNIVERSITAS INDRAPRASTA PGRI<br>(UNINDRA)</h1>
+        <div class="address">Jl. Nangka No.58 Tanjung Barat - JakSel</div>
+        <hr size="5" />
+    </header>
+
+    <table class="form-table">
+        <tr>
+            <td class="label">Nama</td>
+            <td>:</td>
+            <td class="input"><input type="text" placeholder="Nama Anda masing-masing" /></td>
+        </tr>
+        <tr>
+            <td class="label">NPM</td>
+            <td>:</td>
+            <td class="input"><input type="text" placeholder="NPM Anda masing-masing" /></td>
+        </tr>
+    </table>
+
+    <div class="section">
+        <b>FTIK :</b><br />
+        A. Informatika<br />
+        B. Teknik Arsitektur<br />
+        C. Teknik Industri
+    </div>
+
+    <div class="section">
+        <b>MIPA :</b><br />
+        I. Matematika<br />
+        II. Fisika<br />
+        III. Biologi
+    </div>
+
+    <button type="button">SIMPAN</button>
+</body>
+</html>
